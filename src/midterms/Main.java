@@ -13,24 +13,25 @@ public class Main {
 
 
     	for(int i = 0; i<p.length; i++) {
-        	System.out.println(p[i].name + ", " + p[i].age + ", " + p[i].address);
+        	p[i].display();
     	}
     	
     //Dog
-    	Dog d1 = new Dog("\nKoda", "Husky");
-    	Dog d2 = new Dog("Pepper", "Poodle");
+    	Dog[] d = new Dog[2];
+    	d[0] = new Dog("\nKoda", "Husky");
+    	d[1] = new Dog("Pepper", "Poodle");
     	
-    	d1.setBreed("Siberian Husky");
-    	d2.setName("Velvet");
+    	d[0].setBreed("Siberian Husky");
+    	d[1].setName("Velvet");
     	
-    	System.out.println(d1.getName() + ", " + d1.getBreed());
-    	System.out.println(d2.getName() + ", " + d2.getBreed());
+    	for(int i = 0; i<d.length; i++) {
+    		d[i].display();
+    	}
     	
     //Rectangle
     	Rectangle r = new Rectangle(10, 20);
     	
-    	System.out.println("\nArea of a Rectangle = " + r.getArea());
-    	System.out.println("Perimeter of a Rectangle = " + r.getPerimeter());
+    	r.display();
     }
 }
  

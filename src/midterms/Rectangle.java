@@ -14,4 +14,10 @@ public class Rectangle {
 	public double getPerimeter() {
 		return 2*(height+width);
 	}
+	
+	public void display() {
+		System.out.println("\nWidth = " + width + ", Height = " + height);
+		System.out.println(getArea());
+		System.out.println(getPerimeter());
+	}
 }

@@ -9,5 +9,9 @@ class Person {
     	this.age = age;
     	this.address = address;
     }
+    
+    public void display() {
+    	System.out.println(name + ", " + age);
+    }
 }
 
