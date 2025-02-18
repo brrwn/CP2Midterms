@@ -17,7 +17,7 @@ public class Main {
     	}
     	
     //Dog
-    	Dog d1 = new Dog("Koda", "Husky");
+    	Dog d1 = new Dog("\nKoda", "Husky");
     	Dog d2 = new Dog("Pepper", "Poodle");
     	
     	d1.setBreed("Siberian Husky");
